@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
 
 const createSquares = (amount) => {
     container.textContent = '';
-    container.style.width = ((amount - 1) * 51) + "px";
+    container.style.width = (amount * 22 + 22) + "px";
     for(let i = 0; i < amount * amount; i++){
         const div = document.createElement("div");
         div.className = 'square';
